@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<VisualStudioProject
+	ProjectType="Visual C++"
+	Version="9.00"
+	Name="JohnsGame"
+	ProjectGUID="{FF23E025-E0E3-4F55-8050-0D31CC525672}"
+	RootNamespace="JohnsGame"
+	Keyword="MakeFileProj"
+	TargetFrameworkVersion="196613"
+	>
+	<Platforms>
+		<Platform
+			Name="Win32"
+		/>
+	</Platforms>
+	<ToolFiles>
+	</ToolFiles>
+	<Configurations>
+		<Configuration
+			Name="Debug|Win32"
+			OutputDirectory="$(ConfigurationName)\bin"
+			IntermediateDirectory="$(IntDir)"
+			ConfigurationType="0"
+			>
+			<Tool
+				Name="VCNMakeTool"
+				BuildCommandLine="make -r 2&gt;&amp;1 | sed -e &apos;s/(.[a-zA-Z]+):([0-9]+):/1(2):/’"
+				ReBuildCommandLine="make rebuild"
+				CleanCommandLine="make clean"
+				Output="JohnsGame.nds"
+				PreprocessorDefinitions="_DEBUG;ARM9"
+				IncludeSearchPath="C:\projects\tools\devkitPro\libnds\include;C:\projects\tools\devkitPro\libnds\include\nds;C:\projects\tools\devkitPro\libnds\include\nds\arm7;C:\projects\tools\devkitPro\libnds\include\nds\arm9;C:\projects\tools\devkitPro\libnds\include\netinet;C:\projects\tools\devkitPro\libnds\include\sys;.\build"
+				ForcedIncludes=""
+				AssemblySearchPath=""
+				ForcedUsingAssemblies=""
+				CompileAsManaged=""
+			/>
+		</Configuration>
+		<Configuration
+			Name="Release|Win32"
+			OutputDirectory="$(ConfigurationName)\bin"
+			IntermediateDirectory="$(IntDir)"
+			ConfigurationType="0"
+			>
+			<Tool
+				Name="VCNMakeTool"
+				BuildCommandLine="make -r 2&gt;&amp;1 | sed -e &apos;s/(.[a-zA-Z]+):([0-9]+):/1(2):/’"
+				ReBuildCommandLine=""
+				CleanCommandLine="make clean"
+				Output="JohnsGame.nds"
+				PreprocessorDefinitions="NDEBUG;ARM9"
+				IncludeSearchPath="C:\projects\tools\devkitPro\libnds\include;C:\projects\tools\devkitPro\libnds\include\nds;C:\projects\tools\devkitPro\libnds\include\nds\arm7;C:\projects\tools\devkitPro\libnds\include\nds\arm9;C:\projects\tools\devkitPro\libnds\include\netinet;C:\projects\tools\devkitPro\libnds\include\sys;.\build"
+				ForcedIncludes=""
+				AssemblySearchPath=""
+				ForcedUsingAssemblies=""
+				CompileAsManaged=""
+			/>
+		</Configuration>
+	</Configurations>
+	<References>
+	</References>
+	<Files>
+		<Filter
+			Name="Source Files"
+			Filter="cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx"
+			UniqueIdentifier="{4FC737F1-C7A5-4376-A066-2A32D752A2FF}"
+			>
+			<File
+				RelativePath=".\source\main.c"
+				>
+			</File>
+		</Filter>
+		<Filter
+			Name="Header Files"
+			Filter="h;hpp;hxx;hm;inl;inc;xsd"
+			UniqueIdentifier="{93995380-89BD-4b04-88EB-625FBE52EBFB}"
+			>
+		</Filter>
+		<Filter
+			Name="Resource Files"
+			Filter="rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav"
+			UniqueIdentifier="{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}"
+			>
+		</Filter>
+		<File
+			RelativePath=".\Makefile"
+			>
+		</File>
+	</Files>
+	<Globals>
+	</Globals>
+</VisualStudioProject>
